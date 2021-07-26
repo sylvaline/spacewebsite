@@ -1,0 +1,52 @@
+.contact_us{
+    
+    background-color: $bg_deep_blue;
+    width: 100%;
+   
+
+    .contact_us_inner{
+        padding: 1em;
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap:0 2em;
+        margin: auto;
+
+        .address{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            h1{
+                margin-bottom: 1em;
+                color: $accent_color;
+            }
+
+            p{
+                margin-bottom: 2em;
+
+                i{
+                    font-size: 2em;
+                    margin-right: 1em;
+                }
+            }
+        }
+
+        .contact_form{
+            h2{
+                font-size: 3em;
+                margin: .5em 0;
+            }
+            p{
+                margin-bottom: 1em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width) {
+    .contact_us{
+        margin-top: 3em !important;
+    }
+}

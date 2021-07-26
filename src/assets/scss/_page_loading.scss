@@ -1,0 +1,52 @@
+.page_loading{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $accent_color;
+
+    img{
+        width: 8em;
+        height: 8em;
+        object-fit: cover;
+        position: absolute;
+        top: 40%;
+        bottom: 60%;
+        left: 30%;
+        right: 70%;
+    }
+
+    @keyframes ldio-f3i382wv45r {
+        0% { transform: rotate(0deg) }
+        50% { transform: rotate(180deg) }
+        100% { transform: rotate(360deg) }
+      }
+      .ldio-f3i382wv45r div {
+        position: absolute;
+        animation: ldio-f3i382wv45r 1s linear infinite;
+        width: 160px;
+        height: 160px;
+        top: 20px;
+        left: 20px;
+        border-radius: 50%;
+        box-shadow: 0 4px 0 0 white;
+        transform-origin: 80px 82px;
+      }
+      .loadingio-spinner-eclipse-o0ute2o4gu {
+        width: 200px;
+        height: 200px;
+        display: inline-block;
+        overflow: hidden;
+        background: transparent;
+      }
+      .ldio-f3i382wv45r {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transform: translateZ(0) scale(1);
+        backface-visibility: hidden;
+        transform-origin: 0 0; /* see note above */
+      }
+      .ldio-f3i382wv45r div { box-sizing: content-box; }
+}

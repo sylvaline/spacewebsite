@@ -1,0 +1,43 @@
+form{
+    margin-top: 1em;
+    
+    button{
+        border: .2em solid $accent_color !important;
+        font-size: 1em !important;
+        font-weight: bold;
+        margin-bottom: 1em !important;
+    }
+    .form_style{
+        
+        height: 2em;
+        width: 100%;
+        margin-bottom: 1.5em;
+        
+
+        input{
+            height: 100%;
+        }
+    }
+    input, textarea{
+        outline: none;
+        width: 100%;
+        font-size: 1.1em;
+        padding: .5em;
+        border: none;
+        border-radius: .3em;
+        background-color: transparent;
+        border-bottom: .3em solid $accent_color;
+        color: white;
+        &::placeholder{
+            color: white;
+        }
+    }
+
+    textarea{
+        &::placeholder{
+            font-size: 1.3em;
+        }
+        font-size: 1.2em;
+    }
+    
+}

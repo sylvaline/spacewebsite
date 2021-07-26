@@ -1,0 +1,261 @@
+.about{
+    margin-top: 7em;
+    .title{
+        font-size: 2.5em;
+        text-align: left;
+        color: $accent_color;
+        width: 80%;
+        margin-top: -1em;
+        margin-bottom: 2em;
+      
+    }
+    .title_line{
+        width: 10%;
+        height: .3em;
+        background-color: $accent_color;
+        margin-top: -4em;
+        color: $bg_deep_blue;
+        color:#230270;
+    }
+
+    .sub_title{
+        margin: 1em 0;
+    }
+    .about_inner{
+        .staff_management{
+            margin-bottom: 3em;
+        }
+        .about_staffs{
+            
+            h3{
+                color: $accent_color;
+                margin-left: 3em;
+                
+            }
+            h1{
+                // margin-bottom: 3em;
+                margin-top: .2em;
+                margin-left: 1.5em;
+                color: $gray;
+            }
+            .about_staffs_inner{
+                display: flex;
+                width: 90%;
+                margin: 0 auto 3em;
+                color: $gray;
+                // max-height: 20em;
+            
+                .staff_img{
+                    flex: 1;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                .staff_info_p{
+                    p{
+                        background-color: white;
+                        box-shadow: $box_shadow;
+                        padding: .5em;
+                       
+                    }
+                }
+
+                .staff_info_grid{
+                    display: grid;
+                    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr ));
+                    
+                }
+
+                .staff_info{
+                    flex: 1;
+                    padding: 2em 2em 2em 2em;
+
+                    h2{
+                        margin-bottom: 1em;
+                        text-align: center;
+                        color: $accent_color;
+                        
+                        
+                    }
+                    p{
+                        line-height: 1.5em;
+                        font-size: 1.2em;
+                        margin: 1em 0;
+                    }
+                    button{
+                        font-size: 1.3em;
+                    }
+                }
+            }
+        }
+        .about_intro{
+            display: flex;
+                width: 90%;
+                margin : auto;
+                position: relative;
+                color: rgb(22, 21, 21);
+
+                .bg_about_back_line{
+                    width: 80%;
+                    height: 15em;
+                    position: absolute;
+                    top: 5.5em;
+                    right: 0;
+                    left: 22.5%;
+                    border: .3em solid $accent_color;
+                    float: right;
+                    z-index: 0;
+                    
+                }
+
+                img{
+                    width: 33em;
+                    object-fit: cover;
+                    height: 17.5em;
+                    display: inline-block;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .left{
+                    flex: 1;
+                    margin: 3em 0 0 2em ;
+                    background-color: white;
+                    border-radius: .3em;
+                    z-index: 100;
+                    height: 60vh;
+                    padding: 1em;
+
+                    p{
+                        font-size: 1.2em;
+                        margin-bottom: .5em;
+                    }
+                }
+                .right{
+                    flex: 1;
+                    margin-top: -1.5em;
+                    background-color: $accent_color;
+                    border-radius: .3em;
+                    
+                    position: relative;
+                    height: 60vh;
+                    width: 20em !important;
+
+                    .right_inner{
+                        margin-top: 3em;
+                        background-color: $accent_color;
+                        border-radius: .3em;
+                        position: absolute;
+                        right: 4em;
+                        height: 18em;
+                        width: 33em;
+                        z-index: 100;
+
+                    }
+                }
+        }
+    }
+}
+
+@media screen and (max-width:50em) {
+
+    .about{
+        position: relative;
+        z-index: -1 !important;
+
+       
+        
+        .title{
+            width: 90%;
+
+        }
+        .about_inner{
+            
+            .about_staffs{
+                margin-top: 3em;
+                
+                h3{
+                    color: $accent_color;
+                    margin-left: .5em;
+                    
+                }
+                h1{
+                    margin-bottom: 3em;
+                    margin-top: .2em;
+                    margin-left: .7em;
+                    color: $gray;
+                    font-size: 1.2em;
+                }
+                .about_staffs_inner{
+                    display: block;
+
+                    .staff_info{
+                        padding: 1em;
+                    }
+
+                }
+            }
+            .about_intro{
+                display: block;
+                        width: 100%;
+                        margin: auto;
+
+                        .bg_about_back_line{
+                            height: 58em;
+                            width: 90%;
+                    
+                            left: 1em;
+                            z-index: 1;
+                            display: none;
+                        }
+
+                        img{
+                            width: 20em;
+                            display: block;
+                            
+                            height: 16em;
+                            margin: 2em auto 0;
+                        }
+                        
+
+                        .left{
+                            
+                            height: auto;
+                            width: 100%;
+                            margin: 4em auto 0;
+                            
+                            
+
+                            .left_btn{
+                                display: flex;
+                                justify-content: flex-end;
+                                margin-top: 0;
+                            }
+
+                            p{
+                                font-size: 1.2em;
+                            }
+                        }
+                        .right{
+                            display: none; // hiding the about me image for now
+                            margin-top: 30em;
+                            height: auto;
+                            width: 100% !important;
+                            background-color: $accent_color !important;
+
+                            .right_inner{
+                                right: 0 !important;
+                                left: 0;
+                                width: 100%;
+                                height: 20em;
+                                margin: -27em auto 0;
+                            }
+                        }
+            }
+        }
+    }
+    
+}

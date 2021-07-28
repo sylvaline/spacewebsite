@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect} from "react";
 import { Link } from "react-router-dom";
-import Typical from "react-typical";
+// import Typical from "react-typical";
 import Wave from 'react-wavify'
 import Fade from "react-reveal/Fade";
 import Slide from "react-reveal/Slide";
 import Float from "./Float";
 import ContactForm from "./ContactForm";
-
 import Contact from "./Contact";
+import { gsap, } from 'gsap'
 
 function Home() {
 
@@ -17,6 +17,24 @@ function Home() {
     
   },[])
 
+  let tl = gsap.timeline({
+    defaults: {duration:1, scaleY:1.1, ease: "elastic.out(1, 0.3)"}
+});
+
+
+useEffect(()=>{
+    setInterval(()=>{
+        tl.to(".welcome_text", {
+            scaleY:1,
+            stagger:0.2
+        }).to(".welcome_text", {
+            scaleY:.8,
+            stagger:"-.2"
+        });
+    }, 1000)
+   
+})
+
   return (
     <div className="home">
        
@@ -25,8 +43,8 @@ function Home() {
           <div className="landing_page_info">
           <div className="type_writing">
           
-          <Slide bottom>
-          <Typical
+          <Slide left>
+          {/* <Typical
             steps={[
               "Welcome to Space Innovation Hub,",
               1000,
@@ -35,9 +53,35 @@ function Home() {
             ]}
             loop={Infinity}
             wrapper="h1"
-          />
+          /> */}
+
+        <div className="welcome_text_div">
+        <div className="welcome_text_1">
+        <h1 className="welcome_text">Welcome </h1>
+        <h1 className="welcome_text">to </h1>
+        <h1 className="welcome_text">Space </h1>
+        </div>
+        
+        <div className="welcome_text_1">
+        <h1 className="welcome_text">Innovation </h1>
+        <h1 className="welcome_text">Hub,</h1>
+        <h1 className="welcome_text">your </h1>
+        </div>
+          <div className="welcome_text_2">
+          <h1 className="welcome_text">one </h1>
+          <h1 className="welcome_text">stop </h1>
+          <h1 className="welcome_text">for </h1>
+          </div>
+          <div className="welcome_text_2">
+          <h1 className="welcome_text">technological </h1>
+          <h1 className="welcome_text">advancement.</h1>
+        </div>
+        
+        </div>
+       
           </Slide>
           </div>
+          <Slide left>
           <div className="more_landing_page_info">
             <p><span>SpingShot</span> is our latest innovation, sit amet consectetur adipisicing elit. Praesentium voluptates totam iure molestiae porro</p>
             <div className="landing_btns">
@@ -47,7 +91,9 @@ function Home() {
             <Link to='/our-innovations' ><button>Our innovations</button></Link>
             </div>
           </div>
+          </Slide>
           </div>
+          <Slide right>
           <div className="space_innovations">
             <div className="space_innovations_inner">
               
@@ -55,7 +101,7 @@ function Home() {
               <img className="bottom_img" src="\image\splash__1_-removebg-preview.png" alt="" />
             </div>
           </div>
-          
+          </Slide>
         </div>
       </div>
       <Wave
@@ -314,8 +360,8 @@ function Home() {
           <div className="mobile_landing_page_info">
           <div className="mobile_type_writing">
           
-          <Slide bottom>
-          <Typical
+          <Slide right>
+          {/* <Typical
             steps={[
               "Welcome to Space Innovation Hub,",
               1000,
@@ -324,17 +370,48 @@ function Home() {
             ]}
             loop={Infinity}
             wrapper="h1"
-          />
+          /> */}
+        <div className="welcome_text_div">
+        <div className="welcome_text_1">
+        <h1 className="welcome_text">Welcome </h1>
+       
+        </div>
+
+        <div className="welcome_text_1">
+        <h1 className="welcome_text">to </h1>
+        <h1 className="welcome_text">Space </h1>
+        <h1 className="welcome_text">Innovation </h1>
+       
+        </div>
+      
+        <div className="welcome_text_1">
+        <h1 className="welcome_text">Hub,</h1>
+        <h1 className="welcome_text">your </h1>
+        <h1 className="welcome_text">one </h1>
+        </div>
+       
+          <div className="welcome_text_2">
+          <h1 className="welcome_text">stop </h1>
+          <h1 className="welcome_text">for </h1>
+          <h1 className="welcome_text">technological </h1>
+          </div>
+          
+        <div className="welcome_text_2">
+          <h1 className="welcome_text">advancement.</h1>
+        </div>
+        </div>
           </Slide>
           </div>
 
+          <Slide left>
           <div className="mobile_space_innovations">
             <div className="mobile_space_innovations_inner">
             <img className="bottom_img" src="\image\splash__1_-removebg-preview.png" alt="" />
               <img className="top_img" src="\image\sping8-removebg-preview.png" alt="" />
             </div>
           </div>
-
+          </Slide>
+          <Slide right>
           <div className="more_landing_page_info_inner">
             <p> <span>SpingShot</span> is our latest innovation, sit amet consectetur adipisicing elit. Praesentium voluptates totam iure molestiae porro</p>
             <div className="mobile_landing_btns">
@@ -342,6 +419,7 @@ function Home() {
             <a href='https://spingshot.com/' alt='spingshot' target="blank"><button>More on SpingShot</button></a>
             </div>
           </div>
+          </Slide>
           </div>
           
           
@@ -385,16 +463,14 @@ function Home() {
           <Slide bottom>
           <h3 className="title">Hi, we’re Space Innovation Hub </h3>
                 <div className="title_line"></div>
-                <h4 className="sub_title">Space Innovation is the new face of technology in Africa. We are the future of tech</h4>
+                <h4 className="sub_title">Space Innovation is the stop-point for technology development and innovation in Makurdi Benue state of Nigeria</h4>
               </Slide>
               <Slide bottom>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Cum eius earum molestias commodi corrupti
+              <p>
+                It is also a statement of fact that this will be the largest Innovation Hub in Northern Nigeria as it regards experience, human resources, and geography.
                 </p>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Cum eius earum molestias commodi corrupti 
+                Space Hub is designed to cater for the deficiency of technology enthusiasm of Mid-Belt Nigeria and the entire Northern Nigeria.
                 </p>
                 
               </Slide>
@@ -422,7 +498,7 @@ function Home() {
                 <div className="fimg f2">
                 <Link to="/our-innovations">
                 <div className="card">
-            <img src="\image\office_img1.jpg" alt="" srcset="" />
+                <img src="\image\man.jpg" alt="" srcset="" />
             <div className="open">
               <div className="open_inner">
                 <Slide bottom>
@@ -440,7 +516,7 @@ function Home() {
                 <div className="fimg f3">
                 <Link to="/learning-resource-centre">
                 <div className="card">
-            <img src="\image\office_img2.jpg" alt="" srcset="" />
+                <img src="\image\woman.jpg" alt="" srcset="" />
             <div className="open">
               <div className="open_inner">
                 <Slide bottom>
@@ -460,7 +536,7 @@ function Home() {
               <div className="simg s1">
               <Link to="/document-resource-centre">
               <div className="card">
-            <img src="\image\office_img1.jpg" alt="" srcset="" />
+              <img src="\image\man.jpg" alt="" srcset="" />
             <div className="open">
               <div className="open_inner">
                 <Slide bottom>
@@ -479,7 +555,7 @@ function Home() {
                 <div className="simg s2">
                 <Link to="/innovation-support">
                 <div className="card">
-            <img src="\image\office_img2.jpg" alt="" srcset="" />
+                <img src="\image\woman.jpg" alt="" srcset="" />
             <div className="open">
               <div className="open_inner">
                 <Slide bottom>
@@ -499,7 +575,7 @@ function Home() {
               <div className="timg">
               <Link to="/startup-funding">
               <div className="card">
-            <img src="\image\office_img2.jpg" alt="" srcset="" />
+              <img src="\image\man.jpg" alt="" srcset="" />
             <div className="open">
               <div className="open_inner">
                 <Slide bottom>
@@ -517,7 +593,7 @@ function Home() {
                 <div className="timg">
                 <Link to="/co-working">
                 <div className="card">
-            <img src="\image\office_img1.jpg" alt="" srcset="" />
+                <img src="\image\man.jpg" alt="" srcset="" />
             <div className="open">
               <div className="open_inner">
                 <Slide bottom>
@@ -545,7 +621,7 @@ function Home() {
             <div className="home_event_inner">
               <Slide left>
               <div className="home_event_left">
-              <img src="\image\office_img1.jpg" alt="" srcset="" />
+              <img src="\image\man.jpg" alt="" srcset="" />
               </div>
               </Slide>
               <Slide left>
@@ -568,7 +644,8 @@ function Home() {
             <i className="fas fa-graduation-cap"></i>
             </div>
               <h2>TRAINING</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quaerat necessitatibus recusandae qui praesentium quisquam, nostrum consectetur repellendus enim ullam id aspernatur corporis libero dolore suscipit nulla veniam doloribus numquam.</p>
+              <p>Fundamentally, to learn how to become a software developer is the same as to pursue any career path: hard work will truly determine success, not talent.</p>
+              <p>We provide training for individuals and organisation with no knowledge on web/mobile application development to a self dependent level. </p>
             </div>
           </div>
           </Slide>
@@ -579,7 +656,10 @@ function Home() {
           <i class="fab fa-creative-commons-share"></i>
           </div>
               <h2>OUTSOURCING</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quaerat necessitatibus recusandae qui praesentium quisquam, nostrum consectetur repellendus enim ullam id aspernatur corporis libero dolore suscipit nulla veniam doloribus numquam.</p>
+              <p>
+              Satisfied clients and successfully-completed projects is our focus, We provide the best technicians, risk minimisation, cost savings, for software development.
+              </p>
+              <p>with extra attention and deadline consideration to deliver high standards that speak of your business quality</p>
           </div>
           </div>
           </Slide>
@@ -590,7 +670,8 @@ function Home() {
           <i className="fas fa-chalkboard-teacher"></i>
           </div>
               <h2>MENTORSHIP</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quaerat necessitatibus recusandae qui praesentium quisquam, nostrum consectetur repellendus enim ullam id aspernatur corporis libero dolore suscipit nulla veniam doloribus numquam.</p>
+              <p>Mentoring can be a powerful tool for change and growth. Under the right mentor, a mentee is able to expand their capabilities and realize their potential. </p>
+              <p>At Space Innovation, we are committed to supporting and improving technology in Africa, hence the idea of providing a quality mentorship program.</p>
           </div>
           </div>
           </Slide>

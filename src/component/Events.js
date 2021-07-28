@@ -37,6 +37,7 @@ function Events() {
         <div className="page_content">
           <div className="page_content_inner">
             <h1>Content coming soon</h1>
+            
           </div>
         </div>
         </SubLayout>

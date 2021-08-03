@@ -57,15 +57,15 @@ function Nav() {
 
             <div className="menu">
               <ul>
-                <li className="nav_dropdown">
-                  Resource
+                <li className="nav_dropdown main_li">
+                 Resource
                   <ul className="nav_dropdown_open">
-                    <li>
+                    <li className="">
                       <NavLink to="/learning-resource-centre">
                         Learning Resource Centre
                       </NavLink>
                     </li>
-                    <li>
+                    <li className="">
                       <NavLink to="/document-resource-centre">
                         Document Resource Centre
                       </NavLink>
@@ -73,19 +73,19 @@ function Nav() {
                   </ul>
                 </li>
 
-                <li>
+                <li className="main_li">
                   <NavLink to="/co-working">Co-working</NavLink>
                 </li>
-                <li>
+                <li className="main_li">
                   <NavLink to="/our-innovations">Our Innovations </NavLink>
                 </li>
-                <li className="">
+                <li className="main_li" >
                   <NavLink to="/events">Events</NavLink>
                 </li>
-                <li>
+                <li className="main_li"> 
                   <NavLink to="/about">About </NavLink>
                 </li>
-                <li className="contact">
+                <li className="contact main_li">
                   <NavLink to="/contact">Contact us</NavLink>
                 </li>
               </ul>

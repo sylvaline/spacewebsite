@@ -57,8 +57,15 @@
                 .staff_info_p{
                     p{
                         background-color: white;
-                        box-shadow: $box_shadow;
+                        box-shadow: .1em .1em 1em rgb(235, 235, 235);
                         padding: .5em;
+                        transition: all .5s linear;
+                        transform: translateY(0%);
+
+                        &:hover{
+                            box-shadow: .1em .1em 1em rgb(221, 221, 221);
+                            transform: translateY(10%);
+                        }
                        
                     }
                 }

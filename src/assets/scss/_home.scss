@@ -243,7 +243,7 @@
                         margin-left: .5em;
                         font-size: 2.5em;
                         font-family: "Paytone One";
-                        text-shadow: 0 13.36px 8.896px #fff, 0 -2px 1px $accent_color;
+                       
                         
                         
                         
@@ -635,26 +635,29 @@
                     }
                     .mobile_type_writing{
                         min-height: 20em;
-                       margin: 0 2em;
+                        margin-top: -1em;
+                        padding:0 10em;
+                        background-color: white;
+                        border-radius: 50%;
                         .welcome_text_div{
                             
+                            padding-top: 2em;
                             .welcome_text_1, .welcome_text_2{
                                 display: flex ;
                                 // text-align: center !important;
                                 justify-content: center;
-                                align-items: center;
-                                
+                                align-items: center;  
                                 
                             }
                         }
                         
                         h1{
-                            
-                            font-size: 2.4em;
+                            margin-top: .3em;
+                            font-size: 2.2em;
                             padding: 0 .2em;
                             color: $bg_deep_blue;
                             font-family: "Paytone One";
-                            text-shadow: 0 13.36px 8.896px #fff, 0 -2px 1px $accent_color;
+                            font-weight: bolder;
                         }
                     }
                 }

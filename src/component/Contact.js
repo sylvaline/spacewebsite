@@ -19,9 +19,9 @@ function Contact() {
       <div className="contact_us">
       <div className="contact_us_inner">
         <div className="address">
-        <h1>
-              <Link to="/">Space Innovation</Link>
-            </h1>
+        <div className="logo">
+            <Link to="/"><img src="\image\spacelogo.png" alt="" /></Link>
+            </div>
             <p>
             <a
                   href="mailto:okekesylvaline.com?subject=From Space Innovation Tech Hub websit"

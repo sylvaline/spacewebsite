@@ -1,5 +1,15 @@
 form{
     margin-top: 1em;
+
+    .err_msg{
+        
+        margin-top: .5em;
+        span{
+            color: red;
+            font-size: 3em;
+            margin-right: .1em;
+        }
+    }
     
     button{
         border: .2em solid $accent_color !important;
@@ -12,6 +22,8 @@ form{
         height: 2em;
         width: 100%;
         margin-bottom: 1.5em;
+
+        
         
 
         input{

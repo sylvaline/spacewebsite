@@ -28,17 +28,17 @@ function DocumentResourceCentre() {
                     <div className="banner_card_inner">
                         <div className="banner_item">
                         <p className="banner_title">Document Resource Centre</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non in ducimus laboriosam, assumenda magni maiores labore at error temporibus nisi sunt.</p>
+                        <p>Visit our document resource center in our office complex for private web research, document typing and production, graphic designs, printing and photocopy, NYSC registration and printing, WAEC printings, JAMB registration and printing and so much more.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div className="page_content">
+        {/* <div className="page_content">
           <div className="page_content_inner">
             <h1>Content coming soon</h1>
           </div>
-        </div>
+        </div> */}
         </SubLayout>
     )
 }

@@ -28,15 +28,32 @@ function InnovationWatch() {
                     <div className="banner_card_inner">
                         <div className="banner_item">
                         <h2>Our Innovations</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non in ducimus laboriosam, assumenda magni maiores labore at error temporibus nisi sunt.</p>
+                        <p>Innovating is one of the key factors in the vision of Space Innovation Hub. We believe in solving problems and the best way to solve problems is by attempting to make it simpler and almost inconsequential.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div className="page_content">
+          <div className="innovation_header">
+          <h2>Some of our innovations</h2>
+        <p> We developed the simplest to handle tech challenges that mitigate the African business space by helping to put more business online through our cloud and web service delivery through Naira360 Cloud Service, also through SpingShot Social Network platform and FlickCamp microblogging social network platform among few.</p>
+          </div>
           <div className="page_content_inner">
-            <h1>Content coming soon</h1>
+
+            
+          <div className="innovation_images">
+          <a href='https://spingshot.com/' alt='spingshot' target="blank"  ><img src="\image\sping8.jpg"  alt="" />
+            </a>
+          </div>
+          <div className="innovation_images">
+          <a href='https://spingshot.com/' alt='spingshot' target="blank"  ><img src="\image\sping8.jpg"  alt="" />
+            </a>
+          </div>
+          <div className="innovation_images">
+          <a href='https://spingshot.com/' alt='spingshot' target="blank"  ><img src="\image\sping8.jpg" alt="" />
+            </a>
+          </div>
           </div>
         </div>
         </SubLayout>

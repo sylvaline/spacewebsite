@@ -29,17 +29,17 @@ function CoWorking() {
                     <div className="banner_card_inner">
                         <div className="banner_item">
                         <p className="banner_title">Co-Working Space</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non in ducimus laboriosam, assumenda magni maiores labore at error temporibus nisi sunt.</p>
+                        <p>We have space for those who are addicted to working privately and away from their homes or offices. You will have access to our facilities, support team and needed tools or equipment to make your job a lot easier. Space is limited so hurry now to get your reservation by calling our customer service numbers.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div className="page_content">
+        {/* <div className="page_content">
           <div className="page_content_inner">
             <h1>Content coming soon</h1>
           </div>
-        </div>
+        </div> */}
         </SubLayout>
     )
 }

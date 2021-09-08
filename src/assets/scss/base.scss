@@ -48,16 +48,16 @@ body{
     .page_content{
         width: 100%;
         display: flex;
-        min-height: 50vh;
+        color: gray;
         justify-content: center;
         align-items: center;
         
 
         .page_content_inner{
-            width: 60%;
+            
             margin: auto;
-            font-size: 2em;
-            color: $accent_color;
+            
+            
         }
     }
 
@@ -103,14 +103,13 @@ body{
         outline: none;
         background-color: $bg_deep_blue;
         color: white;
-        padding: .6em 1.5em;
-        font-size: .6em;
+        padding: .6em 1em;
+        font-size: 1em;
         transition: background-color .5s linear;
         cursor: pointer;
         border-radius: .3em;
         border: none;
         box-shadow: $box_shadow;
-
         
 
         &:hover{

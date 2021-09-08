@@ -5,7 +5,7 @@
     width: 100%;
     z-index: 0;
     overflow-x: hidden;
-
+}
     .wave {
         height: 35vh;
         z-index: 5;
@@ -241,11 +241,7 @@
                     h1{
                         color: $bg_deep_blue;
                         margin-left: .5em;
-                        font-size: 2.5em;
-                        font-family: "Paytone One";
-                       
-                        
-                        
+                        font-size: 2.3em;
                         
                     }
                 }
@@ -255,16 +251,19 @@
                             color: $bg_deep_blue;
                         }
                         font-size: 1.2em;
+                        margin-top: 1em;
                         margin-bottom: 1.5em;
+                        
                     }
                     .landing_btns{
                         display: flex;
                         button{
                             flex: 1;
                             position: absolute;
-                            right: 7em;
+                            right: 10em;
                             width: 10em;
                             top: -.6em;
+                            padding: .8em 1.3em;
                             
                         }
                         .landing_white_btn{
@@ -273,7 +272,7 @@
                                 background-color: white;
                                 color: $accent_color;
                                 margin-top: 2em;
-                                padding: .65em 1.5em;
+                                padding: .6em 1.5em;
                                 font-size: 1.1em;
                                 transition: background-color .5s linear;
                                 cursor: pointer;
@@ -567,7 +566,6 @@
     }
 
     
-}
 
 @keyframes move_down{
     from{
@@ -592,7 +590,7 @@
 @media screen and (max-width:50em) {
     .home{
         margin-top: -2.5em;
-
+        
         .mobile_wave {
             display: block !important;
             height: 42vh;
@@ -866,13 +864,42 @@
         }
     }
 }
-@media (min-width:320px)  { 
-    .mobile_type_writing{
 
+@media screen and (min-width:40em) {
+    .home{
+        margin-top: -4em;
     }
- }
-@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
-@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
-@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
-@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
-@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+
+     .landing_btns{
+        button{
+            right: 11em !important;
+        }
+    }
+}
+
+@media screen and (min-width:50em) and (max-width:60em) {
+    .home{
+        margin-top: -4em;
+
+        
+        
+    }
+    
+}
+
+@media screen and (min-width:40em) {
+    .home{
+        margin-top: -4em;
+    }
+
+    
+}
+
+@media screen and (min-width:30em) and (max-width:50em) {
+    .home{
+        padding-top: 6em;
+        
+    }
+
+}
+

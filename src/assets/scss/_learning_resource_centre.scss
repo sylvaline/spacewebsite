@@ -1,0 +1,27 @@
+.learning_res{
+    width: 80%;
+    margin: 2em auto;
+
+    h2{
+        margin-bottom: 1em;
+        
+    }
+}
+
+.learning_item{
+    margin: 2em 0;
+
+    p{
+        margin: 1em 0;
+    }
+   
+        span{
+            font-weight: bold;
+            color: $accent_color;
+            margin: 1em 0;
+        }
+   
+    ul{
+        margin-left: 2em;
+    }
+}

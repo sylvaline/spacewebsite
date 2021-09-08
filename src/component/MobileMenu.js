@@ -50,7 +50,13 @@ function MobileMenu() {
             <li onClick={closeMenu}>
               <NavLink to="/about">About us</NavLink>
             </li>
-
+            <li onClick={closeMenu}>
+                  <a
+                    href=" https://6130b0a2e9212cc6645fd68c--eager-lalande-7fafe4.netlify.app/"
+                    alt="spaceAcademy"
+                    target="blank"
+                  >sAcademy</a>
+                </li>
             <li onClick={closeMenu}>
               <NavLink to="/co-working">Co-working</NavLink>
             </li>
@@ -64,6 +70,7 @@ function MobileMenu() {
             <li onClick={closeMenu}>
               <NavLink to="/innovation-support">Innovation Support </NavLink>
             </li>
+
 
             <li onClick={closeMenu}>
               <NavLink to="/learning-resource-centre">

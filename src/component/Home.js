@@ -303,6 +303,9 @@ useEffect(()=>{
                 <h2>Our events and Calender</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aut accusantium suscipit, aliquid culpa rem magnam beatae ducimus incidunt. Illo illum saepe voluptas quam sed ea reprehenderit voluptate iure rem.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aut accusantium suscipit, aliquid culpa rem magnam beatae ducimus incidunt. Illo illum saepe voluptas quam sed ea reprehenderit voluptate iure rem.</p>
+                <button>
+                  <Link to="/events">Learn More</Link>
+                </button>
               </div>
             </div>
           </div>
@@ -628,6 +631,9 @@ useEffect(()=>{
               <div className="home_event_right">
                 <h2>Our events and Calender</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aut accusantium suscipit, aliquid culpa rem magnam beatae ducimus incidunt. Illo illum saepe voluptas quam sed ea reprehenderit voluptate iure rem.</p>
+                <button>
+                  <Link to="/events">Learn More</Link>
+                </button>
               </div>
               </Slide>
             </div>

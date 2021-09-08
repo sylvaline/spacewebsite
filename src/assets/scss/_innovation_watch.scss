@@ -1,0 +1,44 @@
+.page_content{
+
+}
+.innovation_header{
+    margin-left: 2em;
+
+    h2{
+        margin-bottom: 1em;
+        text-align: center;
+    }
+}
+.page_content_inner{
+    display: flex;
+   
+
+    .innovation_images{
+        margin: 1em;
+        img{
+            width: 100%;
+        object-fit: cover;
+        }
+    }
+}
+
+@media screen and (max-width:80em) {
+    .page_content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .innovation_header{
+        margin: 1em;
+    
+        h2{
+            margin-top: 3em;
+            margin-bottom: 1em;
+            text-align: center;
+        }
+    }
+
+    .page_content_inner{
+        display: block;
+    }
+}

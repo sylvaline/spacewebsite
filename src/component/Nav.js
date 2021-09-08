@@ -3,7 +3,6 @@ import { NavLink, Link } from "react-router-dom";
 import MobileMenu from "./MobileMenu";
 
 function Nav() {
-  
   const [navScroll, setNavScroll] = useState(false);
 
   const nav_on_scroll = () => {
@@ -40,6 +39,15 @@ function Nav() {
                     08025363537
                   </a>
                 </span>
+                <span className="bar_line">|</span>
+                <span>
+                  <a
+                    href="tel:08167424880"
+                    alt="call Space Innovation Tech Hub"
+                  >
+                    Login
+                  </a>
+                </span>
               </p>
             </div>
             <div className="phone_right">
@@ -52,41 +60,69 @@ function Nav() {
 
           <div className={navScroll ? "main_nav open" : "main_nav"}>
             <div className="logo">
-            <Link to="/"><img src="\image\spacelogo.png" alt="" /></Link>
+              <Link to="/">
+                <img src="\image\spacelogo.png" alt="" />
+              </Link>
             </div>
 
             <div className="menu">
               <ul>
-                <li className="nav_dropdown main_li">
-                 Resource
-                  <ul className="nav_dropdown_open">
+                <li class="dropdown">
+                  <button class="dropbtn ">
+                    Resources
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <ul class="dropdown-content">
                     <li className="">
-                      <NavLink to="/learning-resource-centre">
+                      <NavLink
+                        activeClassName="nav_active"
+                        to="/learning-resource-centre"
+                      >
                         Learning Resource Centre
                       </NavLink>
                     </li>
                     <li className="">
-                      <NavLink to="/document-resource-centre">
+                      <NavLink
+                        activeClassName="nav_active"
+                        to="/document-resource-centre"
+                      >
                         Document Resource Centre
+                      </NavLink>
+                    </li>
+                    <li className="">
+                      <NavLink activeClassName="nav_active" to="/events">
+                        Event
                       </NavLink>
                     </li>
                   </ul>
                 </li>
 
                 <li className="main_li">
-                  <NavLink to="/co-working">Co-working</NavLink>
+                  <NavLink activeClassName="nav_active" to="/co-working">
+                    Co-working
+                  </NavLink>
                 </li>
                 <li className="main_li">
-                  <NavLink to="/our-innovations">Our Innovations </NavLink>
+                  <NavLink activeClassName="nav_active" to="/our-innovations">
+                    Our Innovations{" "}
+                  </NavLink>
                 </li>
-                <li className="main_li" >
-                  <NavLink to="/events">Events</NavLink>
+                <li className="main_li">
+                  <a
+                    href=" https://6130b0a2e9212cc6645fd68c--eager-lalande-7fafe4.netlify.app/"
+                    alt="spaceAcademy"
+                    target="blank"
+                  >sAcademy</a>
                 </li>
-                <li className="main_li"> 
-                  <NavLink to="/about">About </NavLink>
+                <li className="main_li">
+                  <NavLink activeClassName="nav_active" to="/about">
+                    About{" "}
+                  </NavLink>
                 </li>
                 <li className="contact main_li">
-                  <NavLink to="/contact">Contact us</NavLink>
+                  <NavLink activeClassName="nav_active" to="/contact">
+                    Contact us
+                  </NavLink>
                 </li>
               </ul>
             </div>

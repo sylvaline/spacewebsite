@@ -34,25 +34,67 @@ function InnovationWatch() {
                 </div>
             </div>
         </div>
-        <div className="page_content">
+        <div className="innovation">
           <div className="innovation_header">
           <h2>Some of our innovations</h2>
         <p> We developed the simplest to handle tech challenges that mitigate the African business space by helping to put more business online through our cloud and web service delivery through Naira360 Cloud Service, also through SpingShot Social Network platform and FlickCamp microblogging social network platform among few.</p>
           </div>
           <div className="page_content_inner">
-
             
           <div className="innovation_images">
-          <a href='https://spingshot.com/' alt='spingshot' target="blank"  ><img src="\image\sping8.jpg"  alt="" />
+            <div className="innovation_card_image">
+            <a href='https://spingshot.com/' alt='spingshot' target="blank"  ><img src="\image\sping8.jpg"  alt="" />
             </a>
+            </div>
+            <div className="innovation_info">
+              <h3>SpingShot</h3>
+              <p>Social </p>
+              <p className="brief_desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita consequuntur rerum sit quia atque maxime culpa nemo optio.
+              </p>
+             
+              <div className="btn_div">
+              <a href='https://spingshot.com/' alt='spingshot' target="blank"  > <button>Learn More</button>
+            </a>
+              </div>
+            </div>
           </div>
           <div className="innovation_images">
-          <a href='https://spingshot.com/' alt='spingshot' target="blank"  ><img src="\image\sping8.jpg"  alt="" />
+            <div className="innovation_card_image">
+            <a href='https://spingshot.com/' alt='spingshot' target="blank"  ><img src="\image\sping8.jpg"  alt="" />
             </a>
+            </div>
+            <div className="innovation_info">
+              <h3>SpingShot</h3>
+              <p>Social </p>
+              <p className="brief_desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita consequuntur rerum sit quia atque maxime culpa nemo optio.
+              </p>
+             
+              <div className="btn_div">
+              <a href='https://spingshot.com/' alt='spingshot' target="blank"  > <button>Learn More</button>
+            </a>
+              </div>
+            </div>
           </div>
+
           <div className="innovation_images">
-          <a href='https://spingshot.com/' alt='spingshot' target="blank"  ><img src="\image\sping8.jpg" alt="" />
+            <div className="innovation_card_image">
+            <a href='https://spingshot.com/' alt='spingshot' target="blank"  ><img src="\image\sping8.jpg"  alt="" />
             </a>
+            </div>
+            <div className="innovation_info">
+              <h3>SpingShot</h3>
+              <p>Social Chatting </p>
+              <p className="brief_desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita consequuntur rerum sit quia atque maxime culpa nemo optio.
+              </p>
+             
+              <div className="btn_div">
+              <a href='https://spingshot.com/' alt='spingshot' target="blank"  > <button>Learn More</button>
+            </a>
+              </div>
+            </div>
           </div>
           </div>
         </div>

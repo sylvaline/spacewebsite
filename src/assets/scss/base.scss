@@ -30,7 +30,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     background-color: white;
-    color: white;
+    
 
     h1 {
         
@@ -48,13 +48,13 @@ body{
     .page_content{
         width: 100%;
         display: flex;
-        color: gray;
+        
         justify-content: center;
         align-items: center;
         
 
         .page_content_inner{
-            
+            width: 60%;
             margin: auto;
             
             
@@ -207,6 +207,7 @@ body{
 }
 
     .float{
+        color: white;
         position: fixed;
         bottom: 1em;
         right: 1em;

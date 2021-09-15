@@ -2,9 +2,26 @@
     width: 100%;
     background-color: transparent;
     position: relative;
-    width: 100%;
     z-index: 0;
     overflow-x: hidden;
+
+    h1{
+        
+        color: $gray;
+        font-size: 2em !important;
+    }
+
+   
+
+    @media screen and (min-width:450px) and (max-width:750px) {
+        margin-top: -3em;
+        padding-top: 2em;
+     }
+     @media screen and (min-width:450px) and (max-width:475px) {
+        padding-top: 11em;
+        margin-top: -8em;
+     }
+
 }
     .wave {
         height: 35vh;
@@ -100,6 +117,10 @@
             grid-gap : 1em;
             color: black;
 
+            @media screen and (min-width:470px) and (max-width:800px) {
+                       display: block;
+            }
+
             .stratege_card{
                 padding: 1em;
                 border: .1em solid transparent;
@@ -172,14 +193,13 @@
     
     
     .landing_page{
-        margin-top: 2em;
-        /* -ms-transform: translateY(-50%);
-        transform: translateY(-50%); */
         width: 100%;
-        height: 95vh;
         background-color: $landing_page_bg;
         position: relative;
         
+        @media screen and (min-width:400px) and (max-width:800px) {
+                 margin-top: -8em;
+        }
         
 
         .landing_page_inner{
@@ -191,12 +211,25 @@
                 flex: 1;
                 
                 .space_innovations_inner{
+                    padding-top: 5em;
+                    @media screen and (min-width:450px) and (max-width:750px) {
+                       display: none;
+                    }
+                    @media screen and (min-width:600px) and (max-width:1300px) {
+                        .top_img{
+                            display: none;
+                        }
+                        .bottom_img{
+                            margin-left: 5em;
+                        }
+                    }
                     position: absolute;
                     width: 100%;
                     height: 90vh;
                     z-index: 10000 !important;
 
                     .top_img{
+                        margin-top: 3em;
                         width: 41em;
                         height: 40em;
                         object-fit: cover;
@@ -226,6 +259,7 @@
 
                 .type_writing{
                     min-height: 14em;
+                    padding-top: 5em;
 
                     .m{
                         max-width: 3em !important;
@@ -234,7 +268,7 @@
                     .welcome_text_1, .welcome_text_2{
                         display: flex;
                         flex: 1;
-                        
+                        margin-left: -1em !important;
                         
                     }
                 
@@ -244,8 +278,102 @@
                         font-size: 2.3em;
                         
                     }
+
+                    @media screen and (min-width:1000px) and (max-width:1300px) {
+                       
+                    }
+
+                    @media screen and (min-width:600px) and (max-width:800px) {
+                        margin-top: .5em;
+                        
+                        h1{
+                            font-size: 1.8em;
+                        }
+                    }
+
+                    @media screen and (min-width:800px) and (max-width:1025px) {
+                        margin-top: .5em;
+                        
+                        h1{
+                            font-size: 1.8em;
+                        }
+                   
+                     }
+
+                    @media screen and (min-width:1025px) and (max-width:1300px) {
+                        margin-top: .5em;
+                        
+                        h1{
+                            font-size: 1.8em;
+                        }
+                    }
+
                 }
-                .more_landing_page_info{
+                
+                    .more_landing_page_info{
+                        padding-bottom: 5em;
+                        @media screen and (min-width:450px) and (max-width:750px) {
+
+                            p{
+                                width: 27em !important;
+                            }
+
+                            .landing_btns{
+                                button{
+                                    right: -9em !important;
+                                }
+                            }
+                         }
+                        @media screen and (min-width:750px) and (max-width:800px) {
+                        
+                            margin-top: -.5em;
+                        
+                        .landing_btns{
+                            button{
+                                right: -3em !important;
+                            }
+                        }
+                    }
+
+                    @media screen and (min-width:800px) and (max-width:1020px) {
+                        
+                        margin-top: 2em !important;
+                    
+                    .landing_btns{
+                        button{
+                            right: -2em !important;
+                        }
+                    }
+                }
+
+                    @media screen and (min-width:1020px) and (max-width:1025px) {
+                        
+                        margin-top: -3em;
+                    
+                    .landing_btns{
+                        button{
+                            right: 2em !important;
+                        }
+                    }
+                }
+
+                    @media screen and (min-width:1025px) and (max-width:1500px) {
+                        .landing_btns{
+                            button{
+                                right: 9em !important;
+                            }
+                        }
+                    }
+
+                    @media screen and (min-width:1500px) and (max-width:3000px) {
+                        .landing_btns{
+                            button{
+                                right: 18em !important;
+                            }
+                        }
+                    }
+
+                    
                     p{
                         span{
                             color: $bg_deep_blue;
@@ -319,6 +447,8 @@
                 .home_event_inner{
                     display: flex;
 
+                    
+
                     .home_event_left{
                         flex: 1;
                         img{
@@ -331,18 +461,41 @@
 
                     .home_event_right{
                         flex: 1;
-                        margin: 2em 0 0 4em ;
+                        margin: 0 0 0 4em ;
 
                         h2{
                             margin-bottom: 1.5em;
                             color: $accent_color;
                         }
+
+                        button{
+                            margin-top: 2em;
+                        }
                     }
+
+                    @media screen and (min-width:470px) and (max-width:800px) {
+                        display: block;
+                        
+                        .home_event_right{
+                            
+                            margin: 0!important;
+
+                            h2{
+                                margin-top: 2em !important;
+                            }
+                        }
+                        }
                     
                 }
             }
 
             .home_work_content{
+
+                @media screen and (min-width:450px) and (max-width:700px) {
+                    h1{
+                        font-size: 1.8em !important;
+                    }
+                }
                 width: 90%;
                 margin: -.5em auto 3em;
                 color: black;
@@ -354,9 +507,27 @@
                 h1{
                     margin-bottom: 1em;
                     color: $gray;
+                    font-size: 2em !important;
                 }
 
                 .home_work_content_inner{
+
+                    @media screen and (min-width:450px) and (max-width:700px) {
+                        h1{
+                            font-size: 1.5em !important;
+                        }
+                        .card{
+                            .first_col{
+                                grid-gap:0 0 1em 0 !important
+                            }
+                        }
+                        .third_col, .second_col, .first_col{
+                            display: block !important; 
+                            .fimg, .simg, .timg{
+                                margin-bottom: 1em;
+                            }
+                        }
+                    }
 
                     .card{
                         position: relative;
@@ -519,17 +690,21 @@
                 }
                 .left{
                     flex: 1;
-                    margin: 3em 0 0 2em ;
+                    margin: 1em 0 0 2em ;
                     background-color: white;
                     border-radius: .3em;
                     z-index: 100;
                     height: 60vh;
                     padding: 1em;
-                   
+                    
+                    @media screen and (min-width:400px) and (max-width:900px) {
+                       
+                     }
+
                     .left_btn{
                         display: flex;
                         justify-content: flex-end;
-                        margin-top: 3em;
+                        margin-top: 1em;
                     }
 
                     p{
@@ -539,13 +714,19 @@
                 }
                 .right{
                     flex: 1;
-                    margin-top: -1.5em;
+                    // margin-top: -1.5em;
                     background-color: $accent_color;
                     border-radius: .3em;
-                    
+                    margin-bottom: 2em;
                     position: relative;
                     height: 60vh;
                     width: 20em !important;
+
+                    @media screen and (min-width:400px) and (max-width:900px) {
+                       display: none;
+                    }
+                
+                   
 
                     .right_inner{
                         margin-top: 3em;
@@ -587,7 +768,7 @@
     }
 }
 
-@media screen and (max-width:50em) {
+@media screen and (max-width:28em) {
     .home{
         margin-top: -2.5em;
         
@@ -620,10 +801,11 @@
 
                 .mobile_landing_page_info{
                     padding-top: 2em;
+                    // .more_landing_page_info_circle{
+                    //     width: 100%;
+                    //     background-color: red;
+                    // } planned to use it to style the home background
 
-                    .more_landing_page_info_inner{
-                      
-                    }
                     
                     p{
                         span{
@@ -639,13 +821,12 @@
                         background-color: white;
                         border-radius: 50%;
                         .welcome_text_div{
-                            
                             padding-top: 2em;
+
                             .welcome_text_1, .welcome_text_2{
                                 display: flex ;
-                                // text-align: center !important;
                                 justify-content: center;
-                                align-items: center;  
+                                
                                 
                             }
                         }
@@ -657,6 +838,7 @@
                             color: $bg_deep_blue;
                             font-style: italic;
                             font-weight: bolder;
+                            
                         }
                     }
                 }

@@ -22,13 +22,26 @@
         margin: 1em 0;
     }
     .about_inner{
+        .about_body{
+            width: 70%;
+            margin: 8em auto;
+            background-color: $accent_color;
+            
+            padding: 2em 0;
+            border-radius: .3em;
+
+            @media screen and (max-width : 40em) {
+                width: 90%;
+            }
+        }
+        
         .staff_management{
             margin-bottom: 3em;
         }
         .about_staffs{
             
             h3{
-                color: $accent_color;
+                color: white;
                 margin-left: 3em;
                 
             }
@@ -40,7 +53,7 @@
             }
             .about_staffs_inner{
                 display: flex;
-                width: 90%;
+                width: 95%;
                 margin: 0 auto 3em;
                 color: $gray;
                 // max-height: 20em;
@@ -51,6 +64,7 @@
                         width: 100%;
                         height: 100%;
                         object-fit: cover;
+                        border-radius: .3em;
                     }
                 }
 
@@ -78,7 +92,7 @@
 
                 .staff_info{
                     flex: 1;
-                    padding: 2em 2em 2em 2em;
+                    padding: 2em ;
 
                     h2{
                         margin-bottom: 1em;

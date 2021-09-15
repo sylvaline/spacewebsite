@@ -134,7 +134,12 @@
                   
 
                 .dropdown-content{
-                    top: 3.8em; 
+                    top: 1em; 
+                    background-color: $accent_color;
+                    
+                    a{
+                        color: white !important;
+                    }
                 }
             }
 
@@ -188,6 +193,7 @@
                     background-color: $accent_color;
                     width: 2em;
                     height: .14em;
+                    
                 }
 
                 &::after{
@@ -290,6 +296,10 @@
                     cursor: pointer;
                     transition: color .4s ease;
                     z-index: 4;
+
+                    &:hover{
+                        color: white;
+                    }
                   
                 }
             }
@@ -322,14 +332,22 @@
         background-color: $bg_deep_blue;
         color: white;
       }
+
+      .dropdown_content_container{
+          width: 20%;
+          min-height: 50%;
+          position: absolute;
+          top: 3em;
+      }
       
       .dropdown-content {
         display: none !important;
         position: absolute;
-        background-color: $accent_color;
+        background-color: white;
+        
         // min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        top: 4em;
+        top: 2em;
         z-index: 1;
       }
 
@@ -337,7 +355,7 @@
       
       .dropdown-content a {
         float: none;
-        color: white;
+        color: $accent_color !important;
         padding: 12px 16px;
         text-decoration: none;
         display: block;

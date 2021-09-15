@@ -39,8 +39,7 @@ function About() {
 
             </div>
           </div>
-
-
+          <div className="about_body">
           <div className="about_staffs">
             <h3>Our Vision and Goal</h3>
           
@@ -125,6 +124,7 @@ function About() {
                 <Link to="about-user"><button>Read More</button></Link>
               </div>
           </div>
+      </div>
       </div>
         </div>
        

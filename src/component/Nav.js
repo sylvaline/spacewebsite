@@ -72,6 +72,7 @@ function Nav() {
                     Resources
                     <i class="fa fa-caret-down"></i>
                   </button>
+                  <div className="dropdown_content_container">
                   <ul class="dropdown-content">
                     <li className="">
                       <NavLink
@@ -95,6 +96,8 @@ function Nav() {
                       </NavLink>
                     </li>
                   </ul>
+                  </div>
+                  
                 </li>
 
                 <li className="main_li">

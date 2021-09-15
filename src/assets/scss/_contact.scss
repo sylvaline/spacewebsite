@@ -2,7 +2,7 @@
     padding-top: 6em;
     background-color: $bg_deep_blue;
     width: 100%;
-   
+   color: white !important;
 
     .contact_us_inner{
         padding: 1em;
@@ -54,5 +54,6 @@
 @media screen and (max-width) {
     .contact_us{
         margin-top: 3em !important;
+        
     }
 }

@@ -83,6 +83,7 @@ useEffect(()=>{
           </div>
           <Slide left>
           <div className="more_landing_page_info">
+            
             <p><span>SpingShot</span> is our latest innovation, sit amet consectetur adipisicing elit. Praesentium voluptates totam iure molestiae porro</p>
             <div className="landing_btns">
            
@@ -90,13 +91,13 @@ useEffect(()=>{
             </a>
             <Link to='/our-innovations' ><button>Our innovations</button></Link>
             </div>
+         
           </div>
           </Slide>
           </div>
           <Slide right>
           <div className="space_innovations">
             <div className="space_innovations_inner">
-              
               <img className="top_img" src="\image\sping8-removebg-preview.png" alt="" />
               <img className="bottom_img" src="\image\splash__1_-removebg-preview.png" alt="" />
             </div>
@@ -141,9 +142,6 @@ useEffect(()=>{
               <Fade bottom>
                 <p>
                 It is also a statement of fact that this will be the largest Innovation Hub in Northern Nigeria as it regards experience, human resources, and geography.
-                </p>
-                <p>
-                Space Hub is designed to cater for the deficiency of technology enthusiasm of Mid-Belt Nigeria and the entire Northern Nigeria.
                 </p>
                 
               </Fade>

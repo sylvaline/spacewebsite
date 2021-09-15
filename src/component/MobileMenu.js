@@ -95,6 +95,9 @@ function MobileMenu() {
                 </p>
               
             </li>
+            <li onClick={closeMenu} className="contact">
+              <NavLink to="/contact"></NavLink>
+            </li>
           </ul>
         </Slide>
       </div>

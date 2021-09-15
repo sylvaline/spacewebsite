@@ -2,43 +2,91 @@
 
 }
 .innovation_header{
-    margin-left: 2em;
+    // margin-left: 2em;
+    width: 70%;
+    margin: 2em auto;
 
     h2{
         margin-bottom: 1em;
         text-align: center;
+        font-size: 2em;
+        color: $accent_color;
     }
 }
 .page_content_inner{
     display: flex;
-   
+   width: 80%;
+   margin: auto;
 
     .innovation_images{
-        margin: 1em;
+        background-color: rgba(220, 220, 220, 0.13);
+        margin: 1em 1em 4em 1em;
+        box-shadow: .1em .1em 1em rgba(0, 0, 0, 0.068);
+
         img{
             width: 100%;
         object-fit: cover;
+        border-top-left-radius: .3em;
+        border-top-right-radius: .3em;
+        }
+        .innovation_info{
+            display: flex;
+            flex-direction: column;
+            padding: 1em;
+            h3{
+                margin-top: .5em;
+                color: $accent_color;
+            }
+            p{
+                color: rgb(68, 68, 68);
+            }
+            .brief_desc{
+                margin-top: 1em;
+                font-size: .8em;
+            }
+           .btn_div{
+            // move the button to the right
+            margin-top: 2em;
+           }
+            
         }
     }
 }
 
-@media screen and (max-width:80em) {
+@media screen and (max-width:50em) {
     .page_content{
         display: flex;
         flex-direction: column;
     }
 
     .innovation_header{
-        margin: 1em;
+        width: 90%;
+        margin: auto;
     
         h2{
             margin-top: 3em;
             margin-bottom: 1em;
-            text-align: center;
+            font-size: 1.4em !important;
         }
     }
 
     .page_content_inner{
         display: block;
+        width: 90% ;
+        margin: auto;
+        margin-top : 2em;
+    }
+
+    .innovation_images{
+        margin: 0 !important;
+        margin-bottom: 1em;
+    }
+
+    .innovation_info{
+        margin-top: 2em;
+        
+    }
+    button{
+        font-size: .9em !important;
     }
 }

@@ -54,29 +54,6 @@ function Events() {
                           </div>
 
                           <div className="event_items">
-                            <h3 className="event_item_header">ABOUT BOOT CAMPS</h3>
-                            <p>Our bootcamp programmes are fundamentals of programming, web designs, digital marketing, and basic computer operations. All bootcamp programs have a maximum of 4 weeks of intensive training and at the end all participants receive a certificate of completion.</p>
-                            <p>Students who graduated from these courses are given concessions to be admitted into our intimate and advanced program on related courses of completion.</p>
-                          </div>
-
-                          <div className="event_items">
-                            <h3>Bootcamp Event Calendar</h3>
-                            <p>The bootcamps are in three phases: first the beginners’ phase which is the fundamentals of the desired training program, secondly there would be another phase for intermediate and the final stage is the advanced program of the desired course. </p>
-
-                            <p>The programs are designed for every quarter of the year. Quarter 1 will be between January to April, quarter 2 will be between May to August and quarter 3 will between September to December. What this means is that within each of the three quarters there will be one bootcamp for every available program offered in Space Innovation Hub training programmes.</p>
-
-                            <p>The admission for this program runs for the first one week before it is closed for admission.</p>
-                          </div>
-
-                          <div className="event_items">
-                            <h3>Kids-n-Kode (Programming Bootcamp for Kids)</h3>
-                            <p>With kids-n-kode we designed a summer programme on coding fundamentals for children within the age of 7 – 14 that are still in primary school or awaiting college entry. This programme has a minimum duration of 4 weeks and a maximum duration of 6 weeks depending on the length of the holidays the pupil has.</p>
-                            <p><span>Code Mania (General Programming Bootcamp)</span>
-                            Code mania is an acceleration bootcamp program for adults who want to take advantage of our quarterly programs to become professional developers. The bootcamp last for 4 weeks with an option to enrol into full time course programming training.
-                            </p>
-                          </div>
-
-                          <div className="event_items">
                             <h3>Full Career Developer</h3>
                             <p>This programme is designed for people who are interested in becoming a professional developer in any of the programming languages, e.g.Software Development, Mobile App Development, Web Development etc.</p>
                           </div>
@@ -119,6 +96,27 @@ function Events() {
                           <div className="event_items">
                             <h3>Full Career Developer</h3>
                             <p>This programme is designed for people who are interested in becoming a professional developer in any of the programming languages, e.g.Software Development, Mobile App Development, Web Development etc.</p>
+                          </div>
+
+                          <div className="event_items">
+                            <h3 className="event_item_header">ABOUT BOOT CAMPS</h3>
+                            <p>Our bootcamp programmes are fundamentals of programming, web designs, digital marketing, and basic computer operations. All bootcamp programs have a maximum of 4 weeks of intensive training and at the end all participants receive a certificate of completion.</p>
+                            <p>Students who graduated from these courses are given concessions to be admitted into our intimate and advanced program on related courses of completion.</p>
+                          </div>
+                          <div className="event_items">
+                            <h3>Bootcamp Event Calendar</h3>
+                            <p>The bootcamps are in three phases: first the beginners’ phase which is the fundamentals of the desired training program, secondly there would be another phase for intermediate and the final stage is the advanced program of the desired course. </p>
+
+                            <p>The programs are designed for every quarter of the year. Quarter 1 will be between January to April, quarter 2 will be between May to August and quarter 3 will between September to December. What this means is that within each of the three quarters there will be one bootcamp for every available program offered in Space Innovation Hub training programmes.</p>
+
+                            <p>The admission for this program runs for the first one week before it is closed for admission.</p>
+                          </div>
+                          <div className="event_items">
+                            <h3>Kids-n-Kode (Programming Bootcamp for Kids)</h3>
+                            <p>With kids-n-kode we designed a summer programme on coding fundamentals for children within the age of 7 – 14 that are still in primary school or awaiting college entry. This programme has a minimum duration of 4 weeks and a maximum duration of 6 weeks depending on the length of the holidays the pupil has.</p>
+                            <p><span>Code Mania (General Programming Bootcamp)</span>
+                            Code mania is an acceleration bootcamp program for adults who want to take advantage of our quarterly programs to become professional developers. The bootcamp last for 4 weeks with an option to enrol into full time course programming training.
+                            </p>
                           </div>
                         </div>
             

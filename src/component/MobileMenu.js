@@ -55,7 +55,7 @@ function MobileMenu() {
                     href=" https://6130b0a2e9212cc6645fd68c--eager-lalande-7fafe4.netlify.app/"
                     alt="spaceAcademy"
                     target="blank"
-                  >sAcademy</a>
+                  >Academy</a>
                 </li>
             <li onClick={closeMenu}>
               <NavLink to="/co-working">Co-working</NavLink>

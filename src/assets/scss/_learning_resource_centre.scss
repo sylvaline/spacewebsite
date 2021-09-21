@@ -1,15 +1,42 @@
 .learning_res{
-    width: 80%;
+    width: 100%;
     margin: 2em auto;
+    display: flex;
 
-    h2{
-        margin-bottom: 1em;
-        
+    h3{
+        color: rgb(66, 66, 66);
     }
+
+    .learning_res_intro_h2{
+         color: $accent_color;
+         margin-bottom: 1em;
+    }
+}
+.learning_item_section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap:0 2em;
+   
+}
+
+.learning_res_intro{
+  margin-top: 5em;
+  margin-right: 1em;
+  position: -webkit-sticky;
+  position: sticky !important;
+  top: 0;
+  
 }
 
 .learning_item{
     margin: 2em 0;
+    box-shadow: .1em .1em .5em rgba(0, 0, 0, 0.274);
+    padding: 1em;
+
+    &:hover{
+        background-color: #00bafe13;
+        box-shadow: .1em .1em .5em rgba(0, 0, 0, 0.335);
+    }
 
     p{
         margin: 1em 0;
@@ -24,4 +51,29 @@
     ul{
         margin-left: 2em;
     }
+}
+
+@media screen and (max-width:50em) {
+    .learning_res{
+        display: block;
+    }
+
+    .learning_item_section{
+        display: block;
+    }
+    .learning_item{
+        
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:800px) {
+                       
+}
+
+@media screen and (min-width:800px) and (max-width:1025px) {
+    
+ }
+
+@media screen and (min-width:1025px) and (max-width:1300px) {
+
 }

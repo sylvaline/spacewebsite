@@ -107,6 +107,8 @@ function About() {
          </div>
       </div>
 
+     
+      </div>
       <div className="about_staffs ">
             <h3 className="staff_management">Our Management</h3>
        
@@ -124,7 +126,6 @@ function About() {
                 <Link to="about-user"><button>Read More</button></Link>
               </div>
           </div>
-      </div>
       </div>
         </div>
        

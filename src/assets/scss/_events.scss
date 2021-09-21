@@ -1,12 +1,32 @@
-.event_inner{
-    width: 80%;
-    margin: 2em auto;
+.event_inner {
+  width: 80%;
+  margin: 2em auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 0 2em;
 
-    .event_items{
-        margin: 1em 0;
+  .event_items {
+    margin: 1em 0;
+    box-shadow: 0.1em 0.1em 0.5em rgba(0, 0, 0, 0.274);
+    padding: 1em;
+    max-height: 30em;
+    overflow: scroll;
 
-        h3{
-            color: $accent_color;
-        }
+    &:hover {
+      background-color: #00bafe13;
+      box-shadow: 0.1em 0.1em 0.5em rgba(0, 0, 0, 0.335);
     }
+
+    h3 {
+      color: $accent_color;
+      margin-bottom: 1.5em;
+    }
+  }
+}
+
+@media screen and (max-width:50em) {
+   .event_inner{
+    width: 100%;
+    display: block;
+   }
 }

@@ -37,9 +37,15 @@ function LearningResourceCentre() {
         <div className="page_content">
           <div className="page_content_inner">
             <div className="learning_res">
-              <h2>The list to choose from are:</h2>
+              <div className="learning_res_intro">
+              <h2>How does our</h2>
+              <h2 className="learning_res_intro_h2">Learning Resource work?</h2>
+              <p>You have to pick one or more of the courses we offer and you will get the best learning experience</p>
+              </div>
+              <div className="learning_item_section">
               <div className="learning_item">
-              <p><span>Mobile App Development Training:</span> This training is between 12 to 18 weeks of training with specific outlines like Mobile App Development Benninger, Mobile App Development Intermediate and Mobile App Development Master Class.</p>
+                <h3>Mobile App Development Training</h3>
+              <p> This training is between 12 to 18 weeks of training with specific outlines like Mobile App Development Benninger, Mobile App Development Intermediate and Mobile App Development Master Class.</p>
               <p><span>Class of Training</span></p>
               <ul>
                 <li> iOS Development</li>
@@ -49,7 +55,8 @@ function LearningResourceCentre() {
 
 
               <div className="learning_item">
-              <p><span>Web App Development:</span> This programme will be between 12weeks to 14weeks.</p>
+                <h3>Web App Development</h3>
+              <p>This programme will be between 12weeks to 14weeks.</p>
               
               <ul>
                 <li> Frontend Development and Design -React, WordPress etc</li>
@@ -58,8 +65,8 @@ function LearningResourceCentre() {
               </div>
 
               <div className="learning_item">
-              <p><span>Software Development:</span></p>
-              
+              <h3>Software Development</h3>
+              <p></p>
               <ul>
                 <li> Web based software development</li>
                 <li> Local server softwares</li>
@@ -68,7 +75,8 @@ function LearningResourceCentre() {
 
 
               <div className="learning_item">
-              <p><span>Networking Training:</span>  This training shall be between 10 to 14 weeks.</p>
+                <h3>Networking Training</h3>
+              <p> This training shall be between 10 to 14 weeks.</p>
               <p><span>Class of Training</span></p>
               <ul>
               <li> Data Science</li>
@@ -87,6 +95,8 @@ function LearningResourceCentre() {
                 <li>Etc</li>
               </ul>
               </div>
+              </div>
+
             </div>
           </div>
         </div>
